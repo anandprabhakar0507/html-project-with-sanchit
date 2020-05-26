@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+
+<div style="position: absolute; width:100%; height:450px; background-color: #00458A; top:0; left:0">
+<h1 align="center"> Choose your Doctor </h1>
+<div class="container">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YhLx3fZ1K3ftE3w4v9J5gwAAAA%26pid%3DApi&f=1" alt="Avatar" class="image" style="position: absolute; height:300px; width:300px; left:200px; border-radius:50%">
+  <div class="middle">
+    <div class="text">Dr. John Doe</div>
+  </div>
+</div>
+<div class="container">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WySikShtP5g0P2mcaTpgrAHaHY%26pid%3DApi&f=1" alt="Avatar1" class="image" style="position: absolute; height:300px; width:300px; left:800px; border-radius:50%">
+  <div class="middle">
+    <div class="text">Dr. Gorge </div>
+  </div>
+</div>
+<div class="container">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OkpXpzBGwJG3ocsU79jIrwHaHI%26pid%3DApi&f=1" alt="Avatar3" class="image" style="position: absolute; height:300px; width:300px; left:1400px; border-radius:50%">
+  <div class="middle">
+    <div class="text">Dr. Stephen</div>
+  </div>
+</div>
+  </div>
+</body>
+</html>
+
